@@ -1,8 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import { useHistory,useLocation } from 'react-router';
-import './DisplayBlogs.css'
 import axios from 'axios'
-import { red,blue } from '@material-ui/core/colors';
 import AddIcon from '@material-ui/icons/Add';
 import { Button } from '@material-ui/core';
 

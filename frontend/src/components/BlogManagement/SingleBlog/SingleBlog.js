@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router";
-import "./SingleBlog.css";
 import axios from "axios";
+import DisplayComments from "../../CommentManagement/DisplayComments/DisplayComment";
+import AddComment from "../../CommentManagement/AddComment/AddComment";
 
 function BlogDetails(props) {
-  const [name, setName] = useState("");
   const [id, setID] = useState();
   const [color, setColor] = useState("");
   const [title, setTitle] = useState("");
@@ -35,6 +35,9 @@ function BlogDetails(props) {
     getBlogDetails();
   }, [props]);
 
+  const addComment=()=>{
+    localStorage.setItem("bid",id)
+  }
 
   return (
     <div className="main_div1" align="center">
@@ -59,12 +62,16 @@ function BlogDetails(props) {
           <div>
 
               <div>
-                <button
+                <button onClick={()=>addComment()}
                 ><a href={`/comment/addComment`} style={{color:'white'}}>
                   Add a Comment
                   </a>
                 </button>
               </div>
+
+              <DisplayComments/>
+
+              <AddComment/>
 
           </div>
         </table>

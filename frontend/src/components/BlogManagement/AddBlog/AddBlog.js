@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import {useHistory} from 'react-router-dom';
 import {OutlinedInput} from "@material-ui/core";
 import InputLabel from '@material-ui/core/InputLabel';
-import './AddBlog.css';
 import axios from "axios";
 
 
@@ -12,8 +11,6 @@ function AddBlog() {
     const [color, setColor] = useState("");
     const [description, setDescription] = useState("");
     const history = useHistory();
-
-
 
     async function add(event) {
         event.preventDefault();
