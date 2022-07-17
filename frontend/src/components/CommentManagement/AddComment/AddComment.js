@@ -49,8 +49,8 @@ function AddComment() {
                         <div style={{marginLeft:100,marginTop:50}} className="col-10 ">
                             <div className="row">
 
-                                <div className="col-xl-6 mb-4">
-                                <InputLabel id="demo-mutiple-chip-label"><strong style={{color:'black'}}>Comment</strong></InputLabel>
+                                <div className="col-xl-8 mb-4">
+                                <InputLabel id="demo-mutiple-chip-label"><strong style={{color:'black',fontSize:22}}>Comment</strong></InputLabel><br/><br/>
                                     <OutlinedInput className='form_input'
                                                    type="text"
                                                    name="name"
@@ -58,7 +58,7 @@ function AddComment() {
                                                    placeholder="comment"
                                                    onChange={(e) => setComment(e.target.value)}
                                                    required fullWidth
-                                                   inputProps={{style: {padding: 12}}}
+                                                   inputProps={{style: {padding: 28}}}
                                     />
                                 </div>
                                 <br/>
@@ -69,7 +69,7 @@ function AddComment() {
                                 
                                
                                 <div className="col-xl-12">
-                                    <input type="submit" className="form-submit-btn btn_sign_up" value="Add Details"/>
+                                    <input type="submit" className="form-submit-btn btn_sign_up" value="Add Details" style={{color:'white',backgroundColor:'rgb(59, 129, 209)',padding:'5px 25px',fontSize:20,fontWeight:500,border:'2px solid rgb(59, 129, 209)',borderRadius:15}}/>
                                 </div>
                             </div>
                         </div>

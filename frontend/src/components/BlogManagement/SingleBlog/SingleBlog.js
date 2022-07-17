@@ -45,6 +45,9 @@ function BlogDetails(props) {
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
       <div className="row "></div>
 
       <div className="boxUpdate px-5 main_div2">
@@ -55,23 +58,24 @@ function BlogDetails(props) {
             <div className="row">
               
 
-              <div className="positon_left">
+              <div className="productCard2">
               <h4 className="single_movie_topic1"> {title}</h4>
               <h5 className="single_movie_topic2">{color}</h5><br/>
+              <h5 className="single_movie_topic2">{description}</h5><br/>
               <table className="singleItemBtn">
           <div>
 
               <div>
-                <button onClick={()=>addComment()}
+                {/* <button onClick={()=>addComment()}
                 ><a href={`/comment/addComment`} style={{color:'white'}}>
                   Add a Comment
                   </a>
-                </button>
+                </button> */}
               </div>
+<div style={{marginTop:-70}}> <DisplayComments/></div>
+             
 
-              <DisplayComments/>
-
-              <AddComment/>
+              <div style={{left:220,top:-700,position:"relative"}}><AddComment/></div>
 
           </div>
         </table>

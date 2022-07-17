@@ -34,32 +34,21 @@ function DisplayBlogs() {
     history.push(`/add`)
   }
     return (
-        <div className="container  display_movies"><br/><br/>
-          <div className="row"> 
-              <div className="col-4"> <br/><br/>
-                <div className="pb-2 px-3 d-flex flex-wrap align-items-center justify-content-between">
-                  <h2 className='h1_displayMovies'>Latest Posts</h2>
-                </div>
-              </div>
-              <div className="col-5">
- 
-          </div>
-        </div><br/><br/>
-        <div className="productGrid"  > 
+        <div className="container  display"><br/><br/>
+        <div className="productGrid" style={{width:1500}} > 
           
-            <Button  className="productBtn "  style={{ color:'black', backgroundColor:'#0000008a',width:400 }} onClick={()=>addBlog()}>
-            <strong>Add Posts</strong> <AddIcon/>
+            <Button style={{ color:'white', backgroundColor:'#0000008a',width:400,borderRadius:15,marginLeft:25 }} onClick={()=>addBlog()}>
+            <strong>Add Posts</strong> <AddIcon style={{color:"white"}}/>
             </Button>  
           {blogs.map((Blog,key)=>( 
                 <div key={key}> 
                     <div className="productCard" >
                         <div className="p-3">
-                            <h7 style={{color:"Blog.color"}}>{Blog.title}</h7>
+                            <h7 style={{color:"Blog.color"}}>{Blog.title}</h7><br/><br/>
                             <h6>{Blog.description}</h6>
-                            <h6>{Blog.color}</h6>
-                            <div align="center">
+                            <div align="center" style={{marginTop:100}}>
                               <span> 
-                                  <button className="productBtn"  onClick={()=>view(Blog._id)}> Show More </button>
+                                  <button style={{color:'white',backgroundColor:'rgb(59, 129, 209)',padding:'5px 25px',fontSize:20,fontWeight:500,border:'2px solid rgb(59, 129, 209)',borderRadius:15}}  onClick={()=>view(Blog._id)}> Show More </button>
                               </span> 
                             </div>
                         </div>

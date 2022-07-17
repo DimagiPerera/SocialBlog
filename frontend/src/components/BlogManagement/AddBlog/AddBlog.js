@@ -43,23 +43,19 @@ function AddBlog() {
 
 
     return (
-        <div className="bg_signup" align="center" >
+        <div className="bg_signup" align="center" style={{marginTop:50,width:900,border: "4px solid rgb(59, 129, 209)",marginLeft:200,borderRadius:15}} >
 
-            <div className="row">
-                <div className="col-12">
-                    <div className="pb-2 px-5 d-flex align-items-center justify-content-between">
-                        <h2 className='h2_signup' align="center">Add Blog</h2>
-                    </div>
-                </div>
+            <div className="row" style={{marginTop:90}}>
+              <h1>Create Post</h1>
             </div>
             <div className="form_signUp">
-                <form style={{height: 900, width:1100, marginLeft:350,marginTop:-90}} onSubmit={add} className="boxSignUp"><br/><br/> <br/><br/>
+                <form style={{ marginLeft:120,marginTop:-90}} onSubmit={add} className="boxSignUp"><br/><br/> <br/><br/>
                     <div className="row">
                         <div style={{marginLeft:100,marginTop:50}} className="col-10 ">
                             <div className="row">
 
-                                <div className="col-xl-6 mb-4">
-                                <InputLabel id="demo-mutiple-chip-label"><strong style={{color:'black'}}>Title</strong></InputLabel>
+                                <div className="col-xl-8 mb-4">
+                                <InputLabel id="demo-mutiple-chip-label"><strong style={{color:'black',fontSize:22}}>Title</strong></InputLabel><br/>
                                     <OutlinedInput className='form_input'
                                                    type="text"
                                                    name="name"
@@ -67,13 +63,17 @@ function AddBlog() {
                                                    placeholder="title"
                                                    onChange={(e) => setTitle(e.target.value)}
                                                    required fullWidth
-                                                   inputProps={{style: {padding: 12}}}
+                                                   inputProps={{style: {padding: 15}}}
                                     />
                                 </div>
-                                <br/>
+                                
+                                <br/><br/>
 
-                                <div className="col-xl-6 mb-3">
-                                <InputLabel id="demo-mutiple-chip-label"><strong style={{color:'black'}}>Color</strong></InputLabel>
+                                
+                               
+                                <br/><br/><br/><br/><br/>
+                                <div className="col-xl-8 mb-3">
+                                <InputLabel id="demo-mutiple-chip-label"><strong style={{color:'black',fontSize:22}}>Color</strong></InputLabel><br/>
                                     <OutlinedInput className='form_input'
                                                    type="text"
                                                    name="color"
@@ -85,14 +85,14 @@ function AddBlog() {
                                     />
                                 </div>
 
-                                
+                                <br/><br/>
 
                                 
                                
-                                <br/>
+                                <br/><br/><br/><br/><br/>
 
-                                <div className="col-xl-6 mb-3">
-                                <InputLabel id="demo-mutiple-chip-label"><strong style={{color:'black'}}>Description</strong></InputLabel>
+                                <div className="col-xl-8 mb-3">
+                                <InputLabel id="demo-mutiple-chip-label"><strong style={{color:'black',marginTop:50,fontSize:22}}>Description</strong></InputLabel><br/>
                                     <OutlinedInput className='form_input'
                                                    type="text"
                                                    name="description"
@@ -100,14 +100,15 @@ function AddBlog() {
                                                    placeholder="Description"
                                                    onChange={(e) => setDescription(e.target.value)}
                                                    required fullWidth
-                                                   inputProps={{style: {padding: 32}}}
+                                                   inputProps={{style: {padding: 42}}}
                                     />
                                 </div>
 
                            
                                 <div className="col-xl-12">
-                                    <input type="submit" className="form-submit-btn btn_sign_up" value="Add Details"/>
+                                    <input type="submit" className="form-submit-btn btn_sign_up" style={{color:'white',backgroundColor:'rgb(59, 129, 209)',padding:'5px 25px',fontSize:20,fontWeight:500,border:'2px solid rgb(59, 129, 209)',borderRadius:15}} value="Publish"/>
                                 </div>
+                                <br/><br/><br/>
                             </div>
                         </div>
                     </div>

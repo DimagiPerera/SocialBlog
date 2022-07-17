@@ -17,66 +17,45 @@ Link:hover {
   border: none;
 }
 
-.form-submit-btn{background-image: linear-gradient(to right, #0092FA 0%, #12C4FA  51%, #0092FA  100%)}
-.form-submit-btn {
-    border: 0;
-    margin: 20px auto;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    border-radius: 100px;
-    display: block;
+.productCard{
+  margin-top: 10px;
+  width:400px;
+  height: 300px;
+  border: 4px solid rgb(59, 129, 209);
+  border-radius: 15px;
+  float: left;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 30px;
+
 }
 
-.form-submit-btn:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
+.productCard1{
+  margin-top: 10px;
+  width:400px;
+  height: 70px;
+  border: 4px solid rgb(59, 129, 209);
+  border-radius: 15px;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 30px;
+
 }
 
-body{
-  background-color: #ffffff;
-  color: #000000;
+.productCard2{
+  margin-top: 10px;
+  width:500px;
+  height: 250px;
+  border: 4px solid rgb(59, 129, 209);
+  border-radius: 15px;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 200px;
+
 }
 
-::-webkit-scrollbar{
-  display: none;
-}
-
-.container{
-  min-height: 53vh;
-}
-
-.search Input[type="text"]{
-    border: 0;
-    background: none;
-    display: block;
-    text-align: center;
-    border: 3px solid #ff0000;
-    padding: 10px 20px;
-    width: 350px;
-    outline: none;
-    color: rgb(255, 255, 255);
-    border-radius: 24px;
-    transition: 0.25s;
-    text-align:center; 
-}
-
-.search input[type="text"]:focus{
-    width: 350px;
-    border-color: #ff0000;
-    transform: scale(1.05);
-	transition: transform 1s;
-  color: white;
-}
-
-.search :hover{
-  width: 350px;
-  border-color: #ff0000;
-  transform: scale(1.05);
-transition: transform 1s;
-color: white;
+h6{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 5px;
 }
