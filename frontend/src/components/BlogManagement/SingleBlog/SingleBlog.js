@@ -60,7 +60,7 @@ function BlogDetails(props) {
 
               <div className="productCard2">
               <h4 className="single_movie_topic1"> {title}</h4>
-              <h5 className="single_movie_topic2">{color}</h5><br/>
+              {/* <h5 className="single_movie_topic2">{color}</h5><br/> */}<br/><br/>
               <h5 className="single_movie_topic2">{description}</h5><br/>
               <table className="singleItemBtn">
           <div>
