@@ -32,7 +32,7 @@ function AddBlog() {
 
             await axios.post("http://localhost:8070/blog/addB", newBlog, config);
             alert("blog added successfully")
-            history.push('/blog')
+            history.push('/')
         } catch (error) {
             alert("failed to add the post!");
 
