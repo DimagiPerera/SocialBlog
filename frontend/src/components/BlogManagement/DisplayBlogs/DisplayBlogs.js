@@ -46,7 +46,7 @@ function DisplayBlogs() {
                         <div className="p-3">
                             <h7 style={{color:"Blog.color"}}>{Blog.title}</h7><br/><br/>
                             <h6>{Blog.description}</h6>
-                            <div align="center" style={{marginTop:100}}>
+                            <div align="center" style={{marginTop:60}}>
                               <span> 
                                   <button style={{color:'white',backgroundColor:'rgb(59, 129, 209)',padding:'5px 25px',fontSize:20,fontWeight:500,border:'2px solid rgb(59, 129, 209)',borderRadius:15}}  onClick={()=>view(Blog._id)}> Show More </button>
                               </span> 
