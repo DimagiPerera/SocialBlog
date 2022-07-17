@@ -31,7 +31,7 @@ function AddComment() {
 
             await axios.post("http://localhost:8070/comment/addC", newComment, config);
             alert("comment added successfully")
-            history.push('/blog')
+            history.push('/')
         } catch (error) {
             alert("failed to add the comment!");
 
