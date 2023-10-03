@@ -22,7 +22,7 @@
     "axios": "^0.21.1",
     "cloudinary-react": "^1.7.0",
     "date-fns": "^2.23.0",
-    "multiselect-react-dropdown": "^2.0.6",
+    "multiselect-react-dropdown": "^2.0.25",
     "qrcode": "^1.5.0",
     "react": "^17.0.2",
     "react-countup": "^5.2.0",
